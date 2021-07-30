@@ -12,6 +12,7 @@ public class Forest002 : MonoBehaviour
                    fairyCorrect;
 
     public Sprite artemisSprite, artemisCorrect;
+    public Sprite artemisWriting;
     int questionNumber = 0;
     Text answerText1, answerText2, answerText3, answerText4;
     public float timeRemaining = 0;
@@ -31,6 +32,7 @@ public class Forest002 : MonoBehaviour
         fairyIncorrect = Resources.Load<Sprite>("FairyIncorrect");
         fairyNeutral = Resources.Load<Sprite>("FairyNeutral");
         fairyCorrect = Resources.Load<Sprite>("FairyCorrect");
+        artemisWriting = Resources.Load<Sprite>("ArtemisWriting");
 
         timerReady = false;
 
@@ -54,6 +56,7 @@ public class Forest002 : MonoBehaviour
         }
         else if (questionNumber == 0)
         {
+            //questionImage.sprite = Resources.Load<Sprite>("Questions/Animals/Bear");
             questionImage.sprite = AnimalNamesQuestionBank.questions[0].sprite;
             answerText1.text = AnimalNamesQuestionBank.questions[0].answerOptions[0];
             answerText2.text = AnimalNamesQuestionBank.questions[0].answerOptions[1];
@@ -306,7 +309,7 @@ public class Forest002 : MonoBehaviour
         }
         else
         {
-            fairyImage.sprite = fairyNeutral;
+            fairyImage.sprite = artemisWriting;
             ChangeQuestion();
             timerReady = false;
         }

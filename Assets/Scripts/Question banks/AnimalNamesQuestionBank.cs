@@ -519,82 +519,82 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Dolphin"
         };
 
-
+        LoadQuestionList();
     }
 
     public static void LoadQuestionList()
     {
-        if (!GameControl.animalName004known)
-            questions.Add(animalName004);
+        // if (!GameControl.animalName004known)
+        questions.Add(animalName004);
 
-        if (!GameControl.animalName005known)
-            questions.Add(animalName005);
+        //  if (!GameControl.animalName005known)
+        questions.Add(animalName005);
 
-        if (!GameControl.animalName006known)
-            questions.Add(animalName006);
+        //  if (!GameControl.animalName006known)
+        questions.Add(animalName006);
 
-        if (!GameControl.animalName007known)
-            questions.Add(animalName007);
+        //    if (!GameControl.animalName007known)
+        questions.Add(animalName007);
 
-        if (!GameControl.animalName008known)
-            questions.Add(animalName008);
+        //  if (!GameControl.animalName008known)
+        questions.Add(animalName008);
 
-        if (!GameControl.animalName009known)
-            questions.Add(animalName009);
+        //   if (!GameControl.animalName009known)
+        questions.Add(animalName009);
 
-        if (!GameControl.animalName010known)
-            questions.Add(animalName010);
+        //   if (!GameControl.animalName010known)
+        questions.Add(animalName010);
 
-        if (!GameControl.animalName011known)
-            questions.Add(animalName011);
+        //   if (!GameControl.animalName011known)
+        questions.Add(animalName011);
 
-        if (!GameControl.animalName012known)
-            questions.Add(animalName012);
+        //   if (!GameControl.animalName012known)
+        questions.Add(animalName012);
 
-        if (!GameControl.animalName017known)
-            questions.Add(animalName017);
+        //     if (!GameControl.animalName017known)
+        questions.Add(animalName017);
 
-        if (!GameControl.animalName018known)
-            questions.Add(animalName018);
+        //    if (!GameControl.animalName018known)
+        questions.Add(animalName018);
 
-        if (!GameControl.animalName019known)
-            questions.Add(animalName019);
+        //    if (!GameControl.animalName019known)
+        questions.Add(animalName019);
 
-        if (!GameControl.animalName022known)
-            questions.Add(animalName022);
+        //     if (!GameControl.animalName022known)
+        questions.Add(animalName022);
 
-        if (!GameControl.animalName023known)
-            questions.Add(animalName023);
+        //   if (!GameControl.animalName023known)
+        questions.Add(animalName023);
 
-        if (!GameControl.animalName024known)
-            questions.Add(animalName024);
+        //    if (!GameControl.animalName024known)
+        questions.Add(animalName024);
 
-        if (!GameControl.animalName025known)
-            questions.Add(animalName025);
+        //     if (!GameControl.animalName025known)
+        questions.Add(animalName025);
 
-        if (!GameControl.animalName026known)
-            questions.Add(animalName026);
+        //    if (!GameControl.animalName026known)
+        questions.Add(animalName026);
 
-        if (!GameControl.animalName027known)
-            questions.Add(animalName027);
+        //   if (!GameControl.animalName027known)
+        questions.Add(animalName027);
 
-        if (!GameControl.animalName028known)
-            questions.Add(animalName028);
+        //    if (!GameControl.animalName028known)
+        questions.Add(animalName028);
 
-        if (!GameControl.animalName030known)
-            questions.Add(animalName030);
+        //    if (!GameControl.animalName030known)
+        questions.Add(animalName030);
 
-        if (!GameControl.animalName031known)
-            questions.Add(animalName031);
+        //   if (!GameControl.animalName031known)
+        questions.Add(animalName031);
 
-        if (!GameControl.animalName032known)
-            questions.Add(animalName032);
+        //   if (!GameControl.animalName032known)
+        questions.Add(animalName032);
 
-        if (!GameControl.animalName033known)
-            questions.Add(animalName033);
+        //    if (!GameControl.animalName033known)
+        questions.Add(animalName033);
 
-        if (!GameControl.animalName034known)
-            questions.Add(animalName034);
+        //    if (!GameControl.animalName034known)
+        questions.Add(animalName034);
 
         questions = questions.OrderBy(x => System.Guid.NewGuid()).ToList();
 
