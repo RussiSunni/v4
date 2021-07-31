@@ -12,7 +12,7 @@ public class Forest002 : MonoBehaviour
                    fairyCorrect;
 
     public Sprite artemisSprite, artemisCorrect;
-    public Sprite artemisWriting;
+    public Sprite artemisWriting, artemisIncorrect;
     int questionNumber = 0;
     Text answerText1, answerText2, answerText3, answerText4;
     public float timeRemaining = 0;
@@ -33,6 +33,8 @@ public class Forest002 : MonoBehaviour
         fairyNeutral = Resources.Load<Sprite>("FairyNeutral");
         fairyCorrect = Resources.Load<Sprite>("FairyCorrect");
         artemisWriting = Resources.Load<Sprite>("ArtemisWriting");
+        artemisIncorrect = Resources.Load<Sprite>("incorrect");
+        artemisCorrect = Resources.Load<Sprite>("correct");
 
         timerReady = false;
 
@@ -79,7 +81,7 @@ public class Forest002 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                // SimpleSoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -100,7 +102,7 @@ public class Forest002 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                //  SimpleSoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -121,7 +123,7 @@ public class Forest002 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                //  SimpleSoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -141,7 +143,7 @@ public class Forest002 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                // SimpleSoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -303,9 +305,9 @@ public class Forest002 : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
             if (correctAnswer)
-                fairyImage.sprite = fairyCorrect;
+                fairyImage.sprite = artemisCorrect;
             else
-                fairyImage.sprite = fairyIncorrect;
+                fairyImage.sprite = artemisIncorrect;
         }
         else
         {
