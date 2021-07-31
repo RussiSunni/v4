@@ -18,12 +18,12 @@ public class Map : MonoBehaviour
 
     public void LoadSchoolStage()
     {
-
+        SceneManager.LoadScene("SchoolIntro");
     }
 
     public void LoadForestStage()
     {
-        SceneManager.LoadScene("Forest001");
+        SceneManager.LoadScene("ForestIntro");
         AnimalNamesQuestionBank.LoadQuestionList();
     }
     public void LoadTownStage()
