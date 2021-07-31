@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FamilyQuestionBank : SimpleQuestion
+public class FamilyQuestionBank : Question
 {
-    SimpleQuestion family001 = new SimpleQuestion()
+    Question family001 = new Question()
     {
         number = 1,
         questionName = "sister",
@@ -25,7 +25,7 @@ public class FamilyQuestionBank : SimpleQuestion
 
     //  questions.Add(family001);
 
-    SimpleQuestion family002 = new SimpleQuestion()
+    Question family002 = new Question()
     {
         number = 2,
         questionName = "mother",
@@ -46,7 +46,7 @@ public class FamilyQuestionBank : SimpleQuestion
 
     //  questions.Add(family002);
 
-    SimpleQuestion family003 = new SimpleQuestion()
+    Question family003 = new Question()
     {
         number = 3,
         questionName = "family",

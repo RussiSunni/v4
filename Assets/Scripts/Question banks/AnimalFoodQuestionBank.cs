@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class AnimalFoodQuestionBank : SimpleQuestion
+public class AnimalFoodQuestionBank : Question
 {
-    public static List<SimpleQuestion> questions = new List<SimpleQuestion>();
-    public static SimpleQuestion animalFood001 = new SimpleQuestion();
-    public static SimpleQuestion animalFood002 = new SimpleQuestion();
-    public static SimpleQuestion animalFood003 = new SimpleQuestion();
-    public static SimpleQuestion animalFood004 = new SimpleQuestion();
-    public static SimpleQuestion animalFood005 = new SimpleQuestion();
-    public static SimpleQuestion animalFood006 = new SimpleQuestion();
-    public static SimpleQuestion animalFood007 = new SimpleQuestion();
+    public static List<Question> questions = new List<Question>();
+    public static Question animalFood001 = new Question();
+    public static Question animalFood002 = new Question();
+    public static Question animalFood003 = new Question();
+    public static Question animalFood004 = new Question();
+    public static Question animalFood005 = new Question();
+    public static Question animalFood006 = new Question();
+    public static Question animalFood007 = new Question();
     private Sprite dogSprite,
                     horseSprite,
                     catSprite,
@@ -48,7 +48,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
         mouseSprite = Resources.Load<Sprite>("Questions/Animals/Mouse");
         dolphinSprite = Resources.Load<Sprite>("Questions/Animals/Dolphin");
 
-        animalFood001 = new SimpleQuestion()
+        animalFood001 = new Question()
         {
             number = 1,
             questionName = "carrots",
@@ -80,7 +80,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalFood002 = new SimpleQuestion()
+        animalFood002 = new Question()
         {
             number = 2,
             questionName = "meat",
@@ -112,7 +112,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalFood003 = new SimpleQuestion()
+        animalFood003 = new Question()
         {
             number = 3,
             questionName = "cheese",
@@ -139,7 +139,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalFood004 = new SimpleQuestion()
+        animalFood004 = new Question()
         {
             number = 4,
             questionName = "grass",
@@ -172,7 +172,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
         };
 
 
-        animalFood005 = new SimpleQuestion()
+        animalFood005 = new Question()
         {
             number = 5,
             questionName = "banana",
@@ -199,7 +199,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalFood006 = new SimpleQuestion()
+        animalFood006 = new Question()
         {
             number = 6,
             questionName = "bone",
@@ -226,7 +226,7 @@ public class AnimalFoodQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalFood007 = new SimpleQuestion()
+        animalFood007 = new Question()
         {
             number = 7,
             questionName = "fish",

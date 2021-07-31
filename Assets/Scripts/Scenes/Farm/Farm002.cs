@@ -145,7 +145,7 @@ public class Farm002 : MonoBehaviour
                 FarmAnimalNamesQuestionBank.questions.RemoveAt(questionNumber - 1);
             }
 
-            else if (questionNumber < AnimalNamesQuestionBank.questions.Count)
+            else if (questionNumber < FarmAnimalNamesQuestionBank.questions.Count)
             {
                 // questionNumber++;
                 FarmAnimalNamesQuestionBank.questions.Add(FarmAnimalNamesQuestionBank.questions[0]);

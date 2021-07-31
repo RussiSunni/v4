@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VerbsQuestionBank : SimpleQuestion
+public class VerbsQuestionBank : Question
 {
-
-
-    SimpleQuestion verb001 = new SimpleQuestion()
+    Question verb001 = new Question()
     {
         number = 1,
         questionName = "reading",
@@ -27,7 +25,7 @@ public class VerbsQuestionBank : SimpleQuestion
 
     //    questions.Add(verb001);
 
-    SimpleQuestion verb002 = new SimpleQuestion()
+    Question verb002 = new Question()
     {
         number = 2,
         questionName = "think",
@@ -48,7 +46,7 @@ public class VerbsQuestionBank : SimpleQuestion
 
     //  questions.Add(verb002);
 
-    SimpleQuestion verb003 = new SimpleQuestion()
+    Question verb003 = new Question()
     {
         number = 3,
         questionName = "sleep",
@@ -69,7 +67,7 @@ public class VerbsQuestionBank : SimpleQuestion
 
     //   questions.Add(verb003);
 
-    SimpleQuestion verb004 = new SimpleQuestion()
+    Question verb004 = new Question()
     {
         number = 4,
         questionName = "wake up",
@@ -90,7 +88,7 @@ public class VerbsQuestionBank : SimpleQuestion
 
     //  questions.Add(verb004);
 
-    SimpleQuestion verb005 = new SimpleQuestion()
+    Question verb005 = new Question()
     {
         number = 5,
         questionName = "deliver",

@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalMaleNamesQuestionBank : SimpleQuestion
+public class AnimalMaleNamesQuestionBank : Question
 {
-    public static List<SimpleQuestion> questions = new List<SimpleQuestion>();
-    public static SimpleQuestion animalMaleName001 = new SimpleQuestion();
-    public static SimpleQuestion animalMaleName002 = new SimpleQuestion();
-    public static SimpleQuestion animalMaleName003 = new SimpleQuestion();
-    public static SimpleQuestion animalMaleName004 = new SimpleQuestion();
+    public static List<Question> questions = new List<Question>();
+    public static Question animalMaleName001 = new Question();
+    public static Question animalMaleName002 = new Question();
+    public static Question animalMaleName003 = new Question();
+    public static Question animalMaleName004 = new Question();
 
     void Start()
     {
-        animalMaleName001 = new SimpleQuestion()
+        animalMaleName001 = new Question()
         {
             number = 1,
             questionName = "boar",
@@ -31,7 +31,7 @@ public class AnimalMaleNamesQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalMaleName002 = new SimpleQuestion()
+        animalMaleName002 = new Question()
         {
             number = 2,
             questionName = "buck",
@@ -50,7 +50,7 @@ public class AnimalMaleNamesQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalMaleName003 = new SimpleQuestion()
+        animalMaleName003 = new Question()
         {
             number = 1,
             questionName = "jack",
@@ -69,7 +69,7 @@ public class AnimalMaleNamesQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalMaleName004 = new SimpleQuestion()
+        animalMaleName004 = new Question()
         {
             number = 1,
             questionName = "hen",

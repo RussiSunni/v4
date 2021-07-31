@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SchoolIntro : MonoBehaviour
+public class TownIntro : MonoBehaviour
 {
     private float timeRemaining = 2;
 
@@ -15,7 +15,7 @@ public class SchoolIntro : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("School001");
+            SceneManager.LoadScene("Town001");
         }
     }
 }

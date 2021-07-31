@@ -3,40 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class AnimalNamesQuestionBank : SimpleQuestion
+public class WildAnimalNamesQuestionBank : Question
 {
-    public static List<SimpleQuestion> questions = new List<SimpleQuestion>();
-    public static SimpleQuestion animalName004 = new SimpleQuestion();
-    public static SimpleQuestion animalName005 = new SimpleQuestion();
-    public static SimpleQuestion animalName006 = new SimpleQuestion();
-    public static SimpleQuestion animalName007 = new SimpleQuestion();
-    public static SimpleQuestion animalName008 = new SimpleQuestion();
-    public static SimpleQuestion animalName009 = new SimpleQuestion();
-    public static SimpleQuestion animalName010 = new SimpleQuestion();
-    public static SimpleQuestion animalName011 = new SimpleQuestion();
-    public static SimpleQuestion animalName012 = new SimpleQuestion();
-    public static SimpleQuestion animalName017 = new SimpleQuestion();
-    public static SimpleQuestion animalName018 = new SimpleQuestion();
-    public static SimpleQuestion animalName019 = new SimpleQuestion();
-    public static SimpleQuestion animalName022 = new SimpleQuestion();
-    public static SimpleQuestion animalName023 = new SimpleQuestion();
-    public static SimpleQuestion animalName024 = new SimpleQuestion();
-    public static SimpleQuestion animalName025 = new SimpleQuestion();
-    public static SimpleQuestion animalName026 = new SimpleQuestion();
-    public static SimpleQuestion animalName027 = new SimpleQuestion();
-    public static SimpleQuestion animalName028 = new SimpleQuestion();
-    public static SimpleQuestion animalName030 = new SimpleQuestion();
-    public static SimpleQuestion animalName031 = new SimpleQuestion();
-    public static SimpleQuestion animalName032 = new SimpleQuestion();
-    public static SimpleQuestion animalName033 = new SimpleQuestion();
-    public static SimpleQuestion animalName034 = new SimpleQuestion();
+    public static List<Question> questions = new List<Question>();
+    public static Question wildAnimalName001 = new Question();
+    public static Question wildAnimalName002 = new Question();
+    public static Question wildAnimalName003 = new Question();
+    public static Question wildAnimalName004 = new Question();
+    public static Question wildAnimalName005 = new Question();
+    public static Question wildAnimalName006 = new Question();
+    public static Question wildAnimalName007 = new Question();
+    public static Question wildAnimalName008 = new Question();
+    public static Question wildAnimalName009 = new Question();
+    public static Question wildAnimalName010 = new Question();
+    public static Question wildAnimalName011 = new Question();
+    public static Question wildAnimalName012 = new Question();
+    public static Question wildAnimalName013 = new Question();
+    public static Question wildAnimalName014 = new Question();
+    public static Question wildAnimalName015 = new Question();
+    public static Question wildAnimalName016 = new Question();
+    public static Question wildAnimalName017 = new Question();
+    public static Question wildAnimalName018 = new Question();
+    public static Question wildAnimalName019 = new Question();
+    public static Question wildAnimalName020 = new Question();
+    public static Question wildAnimalName021 = new Question();
+    public static Question wildAnimalName022 = new Question();
+    public static Question wildAnimalName023 = new Question();
+    public static Question wildAnimalName024 = new Question();
 
 
     void Start()
     {
-        animalName004 = new SimpleQuestion()
+        wildAnimalName001 = new Question()
         {
-            number = 4,
+            number = 1,
             questionName = "bear",
             sprite = Resources.Load<Sprite>("Questions/Animals/Bear"),
             answerOptions = new List<string>()
@@ -54,9 +54,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Bear"
         };
 
-        animalName005 = new SimpleQuestion()
+        wildAnimalName002 = new Question()
         {
-            number = 5,
+            number = 2,
             questionName = "wolf",
             sprite = Resources.Load<Sprite>("Questions/Animals/Wolf"),
             answerOptions = new List<string>()
@@ -74,9 +74,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Wolf"
         };
 
-        animalName006 = new SimpleQuestion()
+        wildAnimalName003 = new Question()
         {
-            number = 6,
+            number = 3,
             questionName = "zebra",
             sprite = Resources.Load<Sprite>("Questions/Animals/Zebra"),
             answerOptions = new List<string>()
@@ -94,9 +94,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Zebra"
         };
 
-        animalName007 = new SimpleQuestion()
+        wildAnimalName004 = new Question()
         {
-            number = 7,
+            number = 4,
             questionName = "owl",
             sprite = Resources.Load<Sprite>("Questions/Animals/Owl"),
             answerOptions = new List<string>()
@@ -114,9 +114,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Owl"
         };
 
-        animalName008 = new SimpleQuestion()
+        wildAnimalName005 = new Question()
         {
-            number = 8,
+            number = 5,
             questionName = "monkey",
             sprite = Resources.Load<Sprite>("Questions/Animals/Monkey"),
             answerOptions = new List<string>()
@@ -134,9 +134,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Monkey"
         };
 
-        animalName009 = new SimpleQuestion()
+        wildAnimalName006 = new Question()
         {
-            number = 9,
+            number = 6,
             questionName = "parrot",
             sprite = Resources.Load<Sprite>("Questions/Animals/Parrot"),
             answerOptions = new List<string>()
@@ -154,9 +154,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Parrot"
         };
 
-        animalName010 = new SimpleQuestion()
+        wildAnimalName007 = new Question()
         {
-            number = 10,
+            number = 7,
             questionName = "giraffe",
             sprite = Resources.Load<Sprite>("Questions/Animals/Giraffe"),
             answerOptions = new List<string>()
@@ -174,9 +174,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Giraffe"
         };
 
-        animalName011 = new SimpleQuestion()
+        wildAnimalName008 = new Question()
         {
-            number = 11,
+            number = 8,
             questionName = "lion",
             sprite = Resources.Load<Sprite>("Questions/Animals/Lion"),
             answerOptions = new List<string>()
@@ -194,9 +194,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Lion"
         };
 
-        animalName012 = new SimpleQuestion()
+        wildAnimalName009 = new Question()
         {
-            number = 12,
+            number = 9,
             questionName = "crocodile",
             sprite = Resources.Load<Sprite>("Questions/Animals/Crocodile"),
             answerOptions = new List<string>()
@@ -216,9 +216,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
 
 
 
-        animalName017 = new SimpleQuestion()
+        wildAnimalName010 = new Question()
         {
-            number = 17,
+            number = 10,
             questionName = "rabbit",
             sprite = Resources.Load<Sprite>("Questions/Animals/Rabbit"),
             answerOptions = new List<string>()
@@ -236,9 +236,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Rabbit"
         };
 
-        animalName018 = new SimpleQuestion()
+        wildAnimalName011 = new Question()
         {
-            number = 18,
+            number = 11,
             questionName = "frog",
             sprite = Resources.Load<Sprite>("Questions/Animals/Frog"),
             answerOptions = new List<string>()
@@ -256,9 +256,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Frog"
         };
 
-        animalName019 = new SimpleQuestion()
+        wildAnimalName012 = new Question()
         {
-            number = 19,
+            number = 12,
             questionName = "tiger",
             sprite = Resources.Load<Sprite>("Questions/Animals/Tiger"),
             answerOptions = new List<string>()
@@ -277,9 +277,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
         };
 
 
-        animalName022 = new SimpleQuestion()
+        wildAnimalName013 = new Question()
         {
-            number = 22,
+            number = 13,
             questionName = "elephant",
             sprite = Resources.Load<Sprite>("Questions/Animals/Elephant"),
             answerOptions = new List<string>()
@@ -297,9 +297,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Elephant"
         };
 
-        animalName023 = new SimpleQuestion()
+        wildAnimalName014 = new Question()
         {
-            number = 23,
+            number = 14,
             questionName = "lizard",
             sprite = Resources.Load<Sprite>("Questions/Animals/Lizard"),
             answerOptions = new List<string>()
@@ -317,9 +317,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Lizard"
         };
 
-        animalName024 = new SimpleQuestion()
+        wildAnimalName015 = new Question()
         {
-            number = 24,
+            number = 15,
             questionName = "bat",
             sprite = Resources.Load<Sprite>("Questions/Animals/Bat"),
             answerOptions = new List<string>()
@@ -337,9 +337,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Bat"
         };
 
-        animalName025 = new SimpleQuestion()
+        wildAnimalName016 = new Question()
         {
-            number = 25,
+            number = 16,
             questionName = "eagle",
             sprite = Resources.Load<Sprite>("Questions/Animals/Eagle"),
             answerOptions = new List<string>()
@@ -357,9 +357,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Eagle"
         };
 
-        animalName026 = new SimpleQuestion()
+        wildAnimalName017 = new Question()
         {
-            number = 26,
+            number = 17,
             questionName = "kangaroo",
             sprite = Resources.Load<Sprite>("Questions/Animals/Kangaroo"),
             answerOptions = new List<string>()
@@ -377,9 +377,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Kangaroo"
         };
 
-        animalName027 = new SimpleQuestion()
+        wildAnimalName018 = new Question()
         {
-            number = 27,
+            number = 18,
             questionName = "panda",
             sprite = Resources.Load<Sprite>("Questions/Animals/Panda"),
             answerOptions = new List<string>()
@@ -397,9 +397,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Panda"
         };
 
-        animalName028 = new SimpleQuestion()
+        wildAnimalName019 = new Question()
         {
-            number = 28,
+            number = 19,
             questionName = "penguin",
             sprite = Resources.Load<Sprite>("Questions/Animals/Penguin"),
             answerOptions = new List<string>()
@@ -419,9 +419,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
 
 
 
-        animalName030 = new SimpleQuestion()
+        wildAnimalName020 = new Question()
         {
-            number = 30,
+            number = 20,
             questionName = "snake",
             sprite = Resources.Load<Sprite>("Questions/Animals/Snake"),
             answerOptions = new List<string>()
@@ -439,9 +439,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Snake"
         };
 
-        animalName031 = new SimpleQuestion()
+        wildAnimalName021 = new Question()
         {
-            number = 31,
+            number = 21,
             questionName = "swan",
             sprite = Resources.Load<Sprite>("Questions/Animals/Swan"),
             answerOptions = new List<string>()
@@ -459,9 +459,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Swan"
         };
 
-        animalName032 = new SimpleQuestion()
+        wildAnimalName022 = new Question()
         {
-            number = 32,
+            number = 22,
             questionName = "tortoise",
             sprite = Resources.Load<Sprite>("Questions/Animals/Tortoise"),
             answerOptions = new List<string>()
@@ -479,9 +479,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Tortoise"
         };
 
-        animalName033 = new SimpleQuestion()
+        wildAnimalName023 = new Question()
         {
-            number = 33,
+            number = 23,
             questionName = "shark",
             sprite = Resources.Load<Sprite>("Questions/Animals/Shark"),
             answerOptions = new List<string>()
@@ -499,9 +499,9 @@ public class AnimalNamesQuestionBank : SimpleQuestion
             answerSound = "Shark"
         };
 
-        animalName034 = new SimpleQuestion()
+        wildAnimalName024 = new Question()
         {
-            number = 34,
+            number = 24,
             questionName = "dolphin",
             sprite = Resources.Load<Sprite>("Questions/Animals/Dolphin"),
             answerOptions = new List<string>()
@@ -525,80 +525,80 @@ public class AnimalNamesQuestionBank : SimpleQuestion
     public static void LoadQuestionList()
     {
         // if (!GameControl.animalName004known)
-        questions.Add(animalName004);
+        questions.Add(wildAnimalName001);
 
         //  if (!GameControl.animalName005known)
-        questions.Add(animalName005);
+        questions.Add(wildAnimalName002);
 
         //  if (!GameControl.animalName006known)
-        questions.Add(animalName006);
+        questions.Add(wildAnimalName003);
 
         //    if (!GameControl.animalName007known)
-        questions.Add(animalName007);
+        questions.Add(wildAnimalName004);
 
         //  if (!GameControl.animalName008known)
-        questions.Add(animalName008);
+        questions.Add(wildAnimalName005);
 
         //   if (!GameControl.animalName009known)
-        questions.Add(animalName009);
+        questions.Add(wildAnimalName006);
 
         //   if (!GameControl.animalName010known)
-        questions.Add(animalName010);
+        questions.Add(wildAnimalName007);
 
         //   if (!GameControl.animalName011known)
-        questions.Add(animalName011);
+        questions.Add(wildAnimalName008);
 
         //   if (!GameControl.animalName012known)
-        questions.Add(animalName012);
+        questions.Add(wildAnimalName009);
 
         //     if (!GameControl.animalName017known)
-        questions.Add(animalName017);
+        questions.Add(wildAnimalName010);
 
         //    if (!GameControl.animalName018known)
-        questions.Add(animalName018);
+        questions.Add(wildAnimalName011);
 
         //    if (!GameControl.animalName019known)
-        questions.Add(animalName019);
+        questions.Add(wildAnimalName012);
 
         //     if (!GameControl.animalName022known)
-        questions.Add(animalName022);
+        questions.Add(wildAnimalName013);
 
         //   if (!GameControl.animalName023known)
-        questions.Add(animalName023);
+        questions.Add(wildAnimalName014);
 
         //    if (!GameControl.animalName024known)
-        questions.Add(animalName024);
+        questions.Add(wildAnimalName015);
 
         //     if (!GameControl.animalName025known)
-        questions.Add(animalName025);
+        questions.Add(wildAnimalName016);
 
         //    if (!GameControl.animalName026known)
-        questions.Add(animalName026);
+        questions.Add(wildAnimalName017);
 
         //   if (!GameControl.animalName027known)
-        questions.Add(animalName027);
+        questions.Add(wildAnimalName018);
 
         //    if (!GameControl.animalName028known)
-        questions.Add(animalName028);
+        questions.Add(wildAnimalName019);
 
         //    if (!GameControl.animalName030known)
-        questions.Add(animalName030);
+        questions.Add(wildAnimalName020);
 
         //   if (!GameControl.animalName031known)
-        questions.Add(animalName031);
+        questions.Add(wildAnimalName021);
 
         //   if (!GameControl.animalName032known)
-        questions.Add(animalName032);
+        questions.Add(wildAnimalName022);
 
         //    if (!GameControl.animalName033known)
-        questions.Add(animalName033);
+        questions.Add(wildAnimalName023);
 
         //    if (!GameControl.animalName034known)
-        questions.Add(animalName034);
+        questions.Add(wildAnimalName024);
 
         questions = questions.OrderBy(x => System.Guid.NewGuid()).ToList();
 
-        Debug.Log(questions.Count);
+        //Debug.Log(questions.Count);
     }
 }
 

@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class AnimalActionsQuestionBank : SimpleQuestion
+public class AnimalActionsQuestionBank : Question
 {
-    public static List<SimpleQuestion> questions = new List<SimpleQuestion>();
-    public static SimpleQuestion animalActions001 = new SimpleQuestion();
-    public static SimpleQuestion animalActions002 = new SimpleQuestion();
-    public static SimpleQuestion animalActions003 = new SimpleQuestion();
-    public static SimpleQuestion animalActions004 = new SimpleQuestion();
-    public static SimpleQuestion animalActions005 = new SimpleQuestion();
-    public static SimpleQuestion animalActions006 = new SimpleQuestion();
-    public static SimpleQuestion animalActions007 = new SimpleQuestion();
-    public static SimpleQuestion animalActions008 = new SimpleQuestion();
-    public static SimpleQuestion animalActions009 = new SimpleQuestion();
+    public static List<Question> questions = new List<Question>();
+    public static Question animalActions001 = new Question();
+    public static Question animalActions002 = new Question();
+    public static Question animalActions003 = new Question();
+    public static Question animalActions004 = new Question();
+    public static Question animalActions005 = new Question();
+    public static Question animalActions006 = new Question();
+    public static Question animalActions007 = new Question();
+    public static Question animalActions008 = new Question();
+    public static Question animalActions009 = new Question();
 
     private Sprite tortoiseSprite,
                 lizardSprite,
@@ -30,7 +30,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
         tortoiseSprite = Resources.Load<Sprite>("Questions/Animals/Tortoise");
         lizardSprite = Resources.Load<Sprite>("Questions/Animals/Lizard");
 
-        animalActions001 = new SimpleQuestion()
+        animalActions001 = new Question()
         {
             number = 1,
             questionName = "shark",
@@ -51,7 +51,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalActions002 = new SimpleQuestion()
+        animalActions002 = new Question()
         {
             number = 2,
             questionName = "parrot",
@@ -72,7 +72,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
             size = 1
         };
 
-        animalActions003 = new SimpleQuestion()
+        animalActions003 = new Question()
         {
             number = 3,
             questionName = "walk",
@@ -104,7 +104,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
 
 
 
-        animalActions004 = new SimpleQuestion()
+        animalActions004 = new Question()
         {
             number = 4,
             questionName = "penguin",
@@ -126,7 +126,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
         };
 
 
-        animalActions006 = new SimpleQuestion()
+        animalActions006 = new Question()
         {
             number = 6,
             questionName = "hop",
@@ -154,7 +154,7 @@ public class AnimalActionsQuestionBank : SimpleQuestion
         };
 
 
-        animalActions007 = new SimpleQuestion()
+        animalActions007 = new Question()
         {
             number = 7,
             questionName = "kangaroo",

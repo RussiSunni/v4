@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleQuestion : MonoBehaviour
+public class Question : MonoBehaviour
 {
     public int number;
     public string questionName;

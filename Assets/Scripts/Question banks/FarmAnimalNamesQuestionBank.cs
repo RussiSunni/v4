@@ -5,22 +5,22 @@ using System.Linq;
 
 public class FarmAnimalNamesQuestionBank : MonoBehaviour
 {
-    public static List<SimpleQuestion> questions = new List<SimpleQuestion>();
-    public static SimpleQuestion animalName001 = new SimpleQuestion();
-    public static SimpleQuestion animalName002 = new SimpleQuestion();
-    public static SimpleQuestion animalName003 = new SimpleQuestion();
-    public static SimpleQuestion animalName013 = new SimpleQuestion();
-    public static SimpleQuestion animalName014 = new SimpleQuestion();
-    public static SimpleQuestion animalName015 = new SimpleQuestion();
-    public static SimpleQuestion animalName016 = new SimpleQuestion();
-    public static SimpleQuestion animalName020 = new SimpleQuestion();
-    public static SimpleQuestion animalName021 = new SimpleQuestion();
-    public static SimpleQuestion animalName029 = new SimpleQuestion();
-    public static SimpleQuestion animalName035 = new SimpleQuestion();
+    public static List<Question> questions = new List<Question>();
+    public static Question animalName001 = new Question();
+    public static Question animalName002 = new Question();
+    public static Question animalName003 = new Question();
+    public static Question animalName013 = new Question();
+    public static Question animalName014 = new Question();
+    public static Question animalName015 = new Question();
+    public static Question animalName016 = new Question();
+    public static Question animalName020 = new Question();
+    public static Question animalName021 = new Question();
+    public static Question animalName029 = new Question();
+    public static Question animalName035 = new Question();
 
     void Start()
     {
-        animalName001 = new SimpleQuestion()
+        animalName001 = new Question()
         {
             number = 1,
             questionName = "cat",
@@ -40,7 +40,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Cat"
         };
 
-        animalName002 = new SimpleQuestion()
+        animalName002 = new Question()
         {
             number = 2,
             questionName = "dog",
@@ -60,7 +60,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Dog"
         };
 
-        animalName003 = new SimpleQuestion()
+        animalName003 = new Question()
         {
             number = 3,
             questionName = "horse",
@@ -79,7 +79,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             size = 1,
             answerSound = "Horse"
         };
-        animalName013 = new SimpleQuestion()
+        animalName013 = new Question()
         {
             number = 13,
             questionName = "cow",
@@ -99,7 +99,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Cow"
         };
 
-        animalName014 = new SimpleQuestion()
+        animalName014 = new Question()
         {
             number = 14,
             questionName = "duck",
@@ -119,7 +119,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Duck"
         };
 
-        animalName015 = new SimpleQuestion()
+        animalName015 = new Question()
         {
             number = 15,
             questionName = "pig",
@@ -139,7 +139,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Pig"
         };
 
-        animalName016 = new SimpleQuestion()
+        animalName016 = new Question()
         {
             number = 16,
             questionName = "donkey",
@@ -159,7 +159,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Donkey"
         };
 
-        animalName020 = new SimpleQuestion()
+        animalName020 = new Question()
         {
             number = 20,
             questionName = "goat",
@@ -179,7 +179,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Goat"
         };
 
-        animalName021 = new SimpleQuestion()
+        animalName021 = new Question()
         {
             number = 21,
             questionName = "chicken",
@@ -199,7 +199,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Chicken"
         };
 
-        animalName029 = new SimpleQuestion()
+        animalName029 = new Question()
         {
             number = 29,
             questionName = "sheep",
@@ -219,7 +219,7 @@ public class FarmAnimalNamesQuestionBank : MonoBehaviour
             answerSound = "Sheep"
         };
 
-        animalName035 = new SimpleQuestion()
+        animalName035 = new Question()
         {
             number = 35,
             questionName = "mouse",

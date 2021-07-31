@@ -24,7 +24,7 @@ public class Map : MonoBehaviour
     public void LoadForestStage()
     {
         SceneManager.LoadScene("ForestIntro");
-        AnimalNamesQuestionBank.LoadQuestionList();
+        WildAnimalNamesQuestionBank.LoadQuestionList();
     }
     public void LoadTownStage()
     {

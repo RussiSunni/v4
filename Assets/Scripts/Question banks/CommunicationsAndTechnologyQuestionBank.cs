@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CommunicationsAndTechnologyQuestionBank : SimpleQuestion
+public class CommunicationsAndTechnologyQuestionBank : Question
 {
-    SimpleQuestion communicationsAndTechnology001 = new SimpleQuestion()
+    Question communicationsAndTechnology001 = new Question()
     {
         number = 1,
         questionName = "mobile phone",

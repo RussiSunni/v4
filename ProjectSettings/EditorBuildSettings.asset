@@ -59,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/School/SchoolIntro.unity
     guid: 7d34906f9b26d3148b16e74916bc538c
+  - enabled: 1
+    path: Assets/Scenes/School/School001.unity
+    guid: 76ab65eb15fd149f8ae46f9cc6ba1eb1
+  - enabled: 1
+    path: Assets/Scenes/Town/TownIntro.unity
+    guid: e118a7a1ec2d0a24a9efb13072c00522
   m_configObjects: {}
