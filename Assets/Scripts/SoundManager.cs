@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleSoundManager : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
     public static AudioClip incorrectSound, correctSound, nextLevelSound, answerSound, scene1Intro, scene2Intro;
     public static AudioClip forest001Q001, forest001Q002, forest001Q003, forest001Q004;

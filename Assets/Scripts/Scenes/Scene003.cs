@@ -37,7 +37,7 @@ public class Scene003 : MonoBehaviour
         {
             fairyTalk.text = "";
             answerText1.text = "Start";
-            SimpleSoundManager.playNextLevelSound();
+            SoundManager.playNextLevelSound();
         }
         else
             Answer1();
@@ -79,7 +79,7 @@ public class Scene003 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
         }
     }
@@ -109,7 +109,7 @@ public class Scene003 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }
@@ -140,7 +140,7 @@ public class Scene003 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }
@@ -171,7 +171,7 @@ public class Scene003 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }

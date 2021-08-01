@@ -47,9 +47,9 @@ public class Scene002 : MonoBehaviour
         if (!GameControl.scene2Started)
         {
             fairyTalk.text = "Can you help the animal find their food? They will be very thankful if you do ☺.";
-            SimpleSoundManager.playScene2Intro();
+            SoundManager.playScene2Intro();
             answerText1.text = "Start";
-            SimpleSoundManager.playNextLevelSound();
+            SoundManager.playNextLevelSound();
         }
         else
             Answer1();
@@ -113,7 +113,7 @@ public class Scene002 : MonoBehaviour
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
         }
     }
@@ -143,7 +143,7 @@ public class Scene002 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }
@@ -174,7 +174,7 @@ public class Scene002 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }
@@ -205,7 +205,7 @@ public class Scene002 : MonoBehaviour
                 else
                 {
                     correctAnswer = false;
-                    SimpleSoundManager.playIncorrectSound();
+                    SoundManager.playIncorrectSound();
                 }
             }
         }

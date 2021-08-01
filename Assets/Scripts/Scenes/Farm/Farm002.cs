@@ -59,12 +59,12 @@ public class Farm002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -80,12 +80,12 @@ public class Farm002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -101,12 +101,12 @@ public class Farm002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -121,12 +121,12 @@ public class Farm002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                SimpleSoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;

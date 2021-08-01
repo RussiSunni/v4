@@ -3,38 +3,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class WildAnimalNamesQuestionBank : Question
+public class AnimalsQuestionBank : Question
 {
     public static List<Question> questions = new List<Question>();
-    public static Question wildAnimalName001 = new Question();
-    public static Question wildAnimalName002 = new Question();
-    public static Question wildAnimalName003 = new Question();
-    public static Question wildAnimalName004 = new Question();
-    public static Question wildAnimalName005 = new Question();
-    public static Question wildAnimalName006 = new Question();
-    public static Question wildAnimalName007 = new Question();
-    public static Question wildAnimalName008 = new Question();
-    public static Question wildAnimalName009 = new Question();
-    public static Question wildAnimalName010 = new Question();
-    public static Question wildAnimalName011 = new Question();
-    public static Question wildAnimalName012 = new Question();
-    public static Question wildAnimalName013 = new Question();
-    public static Question wildAnimalName014 = new Question();
-    public static Question wildAnimalName015 = new Question();
-    public static Question wildAnimalName016 = new Question();
-    public static Question wildAnimalName017 = new Question();
-    public static Question wildAnimalName018 = new Question();
-    public static Question wildAnimalName019 = new Question();
-    public static Question wildAnimalName020 = new Question();
-    public static Question wildAnimalName021 = new Question();
-    public static Question wildAnimalName022 = new Question();
-    public static Question wildAnimalName023 = new Question();
-    public static Question wildAnimalName024 = new Question();
+    public static Question animals001 = new Question();
+    public static Question animals002 = new Question();
+    public static Question animals003 = new Question();
+    public static Question animals004 = new Question();
+    public static Question animals005 = new Question();
+    public static Question animals006 = new Question();
+    public static Question animals007 = new Question();
+    public static Question animals008 = new Question();
+    public static Question animals009 = new Question();
+    public static Question animals010 = new Question();
+    public static Question animals011 = new Question();
+    public static Question animals012 = new Question();
+    public static Question animals013 = new Question();
+    public static Question animals014 = new Question();
+    public static Question animals015 = new Question();
+    public static Question animals016 = new Question();
+    public static Question animals017 = new Question();
+    public static Question animals018 = new Question();
+    public static Question animals019 = new Question();
+    public static Question animals020 = new Question();
+    public static Question animals021 = new Question();
+    public static Question animals022 = new Question();
+    public static Question animals023 = new Question();
+    public static Question animals024 = new Question();
+    public static Question animals025 = new Question();
+    public static Question animals026 = new Question();
 
 
     void Start()
     {
-        wildAnimalName001 = new Question()
+        animals001 = new Question()
         {
             number = 1,
             questionName = "bear",
@@ -54,7 +56,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Bear"
         };
 
-        wildAnimalName002 = new Question()
+        animals002 = new Question()
         {
             number = 2,
             questionName = "wolf",
@@ -74,7 +76,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Wolf"
         };
 
-        wildAnimalName003 = new Question()
+        animals003 = new Question()
         {
             number = 3,
             questionName = "zebra",
@@ -94,7 +96,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Zebra"
         };
 
-        wildAnimalName004 = new Question()
+        animals004 = new Question()
         {
             number = 4,
             questionName = "owl",
@@ -114,7 +116,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Owl"
         };
 
-        wildAnimalName005 = new Question()
+        animals005 = new Question()
         {
             number = 5,
             questionName = "monkey",
@@ -134,7 +136,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Monkey"
         };
 
-        wildAnimalName006 = new Question()
+        animals006 = new Question()
         {
             number = 6,
             questionName = "parrot",
@@ -154,7 +156,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Parrot"
         };
 
-        wildAnimalName007 = new Question()
+        animals007 = new Question()
         {
             number = 7,
             questionName = "giraffe",
@@ -174,7 +176,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Giraffe"
         };
 
-        wildAnimalName008 = new Question()
+        animals008 = new Question()
         {
             number = 8,
             questionName = "lion",
@@ -194,7 +196,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Lion"
         };
 
-        wildAnimalName009 = new Question()
+        animals009 = new Question()
         {
             number = 9,
             questionName = "crocodile",
@@ -216,7 +218,7 @@ public class WildAnimalNamesQuestionBank : Question
 
 
 
-        wildAnimalName010 = new Question()
+        animals010 = new Question()
         {
             number = 10,
             questionName = "rabbit",
@@ -236,7 +238,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Rabbit"
         };
 
-        wildAnimalName011 = new Question()
+        animals011 = new Question()
         {
             number = 11,
             questionName = "frog",
@@ -256,7 +258,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Frog"
         };
 
-        wildAnimalName012 = new Question()
+        animals012 = new Question()
         {
             number = 12,
             questionName = "tiger",
@@ -277,7 +279,7 @@ public class WildAnimalNamesQuestionBank : Question
         };
 
 
-        wildAnimalName013 = new Question()
+        animals013 = new Question()
         {
             number = 13,
             questionName = "elephant",
@@ -297,7 +299,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Elephant"
         };
 
-        wildAnimalName014 = new Question()
+        animals014 = new Question()
         {
             number = 14,
             questionName = "lizard",
@@ -317,7 +319,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Lizard"
         };
 
-        wildAnimalName015 = new Question()
+        animals015 = new Question()
         {
             number = 15,
             questionName = "bat",
@@ -337,7 +339,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Bat"
         };
 
-        wildAnimalName016 = new Question()
+        animals016 = new Question()
         {
             number = 16,
             questionName = "eagle",
@@ -357,7 +359,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Eagle"
         };
 
-        wildAnimalName017 = new Question()
+        animals017 = new Question()
         {
             number = 17,
             questionName = "kangaroo",
@@ -377,7 +379,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Kangaroo"
         };
 
-        wildAnimalName018 = new Question()
+        animals018 = new Question()
         {
             number = 18,
             questionName = "panda",
@@ -397,7 +399,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Panda"
         };
 
-        wildAnimalName019 = new Question()
+        animals019 = new Question()
         {
             number = 19,
             questionName = "penguin",
@@ -419,7 +421,7 @@ public class WildAnimalNamesQuestionBank : Question
 
 
 
-        wildAnimalName020 = new Question()
+        animals020 = new Question()
         {
             number = 20,
             questionName = "snake",
@@ -439,7 +441,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Snake"
         };
 
-        wildAnimalName021 = new Question()
+        animals021 = new Question()
         {
             number = 21,
             questionName = "swan",
@@ -459,7 +461,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Swan"
         };
 
-        wildAnimalName022 = new Question()
+        animals022 = new Question()
         {
             number = 22,
             questionName = "tortoise",
@@ -479,7 +481,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Tortoise"
         };
 
-        wildAnimalName023 = new Question()
+        animals023 = new Question()
         {
             number = 23,
             questionName = "shark",
@@ -499,7 +501,7 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Shark"
         };
 
-        wildAnimalName024 = new Question()
+        animals024 = new Question()
         {
             number = 24,
             questionName = "dolphin",
@@ -519,82 +521,122 @@ public class WildAnimalNamesQuestionBank : Question
             answerSound = "Dolphin"
         };
 
+        animals025 = new Question()
+        {
+            number = 25,
+            questionName = "bee",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Bee"),
+            answerOptions = new List<string>()
+        {
+            "shark",
+            "panda",
+            "swan",
+            "dolphin"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Bee"
+        };
+
+        animals026 = new Question()
+        {
+            number = 26,
+            questionName = "bird",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Bird"),
+            answerOptions = new List<string>()
+        {
+            "shark",
+            "panda",
+            "swan",
+            "dolphin"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Bird"
+        };
+
         LoadQuestionList();
     }
 
     public static void LoadQuestionList()
     {
         // if (!GameControl.animalName004known)
-        questions.Add(wildAnimalName001);
+        questions.Add(animals001);
 
         //  if (!GameControl.animalName005known)
-        questions.Add(wildAnimalName002);
+        questions.Add(animals002);
 
         //  if (!GameControl.animalName006known)
-        questions.Add(wildAnimalName003);
+        questions.Add(animals003);
 
         //    if (!GameControl.animalName007known)
-        questions.Add(wildAnimalName004);
+        questions.Add(animals004);
 
         //  if (!GameControl.animalName008known)
-        questions.Add(wildAnimalName005);
+        questions.Add(animals005);
 
         //   if (!GameControl.animalName009known)
-        questions.Add(wildAnimalName006);
+        questions.Add(animals006);
 
         //   if (!GameControl.animalName010known)
-        questions.Add(wildAnimalName007);
+        questions.Add(animals007);
 
         //   if (!GameControl.animalName011known)
-        questions.Add(wildAnimalName008);
+        questions.Add(animals008);
 
         //   if (!GameControl.animalName012known)
-        questions.Add(wildAnimalName009);
+        questions.Add(animals009);
 
         //     if (!GameControl.animalName017known)
-        questions.Add(wildAnimalName010);
+        questions.Add(animals010);
 
         //    if (!GameControl.animalName018known)
-        questions.Add(wildAnimalName011);
+        questions.Add(animals011);
 
         //    if (!GameControl.animalName019known)
-        questions.Add(wildAnimalName012);
+        questions.Add(animals012);
 
         //     if (!GameControl.animalName022known)
-        questions.Add(wildAnimalName013);
+        questions.Add(animals013);
 
         //   if (!GameControl.animalName023known)
-        questions.Add(wildAnimalName014);
+        questions.Add(animals014);
 
         //    if (!GameControl.animalName024known)
-        questions.Add(wildAnimalName015);
+        questions.Add(animals015);
 
         //     if (!GameControl.animalName025known)
-        questions.Add(wildAnimalName016);
+        questions.Add(animals016);
 
         //    if (!GameControl.animalName026known)
-        questions.Add(wildAnimalName017);
+        questions.Add(animals017);
 
         //   if (!GameControl.animalName027known)
-        questions.Add(wildAnimalName018);
+        questions.Add(animals018);
 
         //    if (!GameControl.animalName028known)
-        questions.Add(wildAnimalName019);
+        questions.Add(animals019);
 
         //    if (!GameControl.animalName030known)
-        questions.Add(wildAnimalName020);
+        questions.Add(animals020);
 
         //   if (!GameControl.animalName031known)
-        questions.Add(wildAnimalName021);
+        questions.Add(animals021);
 
         //   if (!GameControl.animalName032known)
-        questions.Add(wildAnimalName022);
+        questions.Add(animals022);
 
         //    if (!GameControl.animalName033known)
-        questions.Add(wildAnimalName023);
+        questions.Add(animals023);
 
         //    if (!GameControl.animalName034known)
-        questions.Add(wildAnimalName024);
+        questions.Add(animals024);
 
         questions = questions.OrderBy(x => System.Guid.NewGuid()).ToList();
 

@@ -686,7 +686,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &473025566
 GameObject:
@@ -885,7 +885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709093642
 GameObject:
@@ -1551,8 +1551,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1661714691}
-  - component: {fileID: 1661714690}
   - component: {fileID: 1661714692}
+  - component: {fileID: 1661714690}
   m_Layer: 0
   m_Name: Code
   m_TagString: Untagged
@@ -1576,7 +1576,7 @@ MonoBehaviour:
   fairyImage: {fileID: 709093647}
   artemisSprite: {fileID: 0}
   artemisCorrect: {fileID: 0}
-  artemisWriting: {fileID: 0}
+  artemisNeutral: {fileID: 0}
   artemisIncorrect: {fileID: 0}
   timeRemaining: 0
   fairyTalk: {fileID: 142022497}
@@ -1587,12 +1587,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661714689}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1661714692
 MonoBehaviour:

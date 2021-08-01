@@ -13,7 +13,7 @@ public class Forest001 : MonoBehaviour
     {
         questionNumber = 1;
         NPCText.text = "Hello";
-        SimpleSoundManager.PlaySound(SimpleSoundManager.forest001Q001);
+        SoundManager.PlaySound(SoundManager.forest001Q001);
         answerText1.text = "thank you";
         answerText2.text = "hello";
         answerText3.text = "goodbye";
@@ -100,7 +100,7 @@ public class Forest001 : MonoBehaviour
     {
         if (questionNumber == 2)
         {
-            SimpleSoundManager.PlaySound(SimpleSoundManager.forest001Q002);
+            SoundManager.PlaySound(SoundManager.forest001Q002);
             NPCText.text = "Welcome to my forest";
             answerText1.text = "hello";
             answerText2.text = "goodbye";
@@ -110,7 +110,7 @@ public class Forest001 : MonoBehaviour
 
         else if (questionNumber == 3)
         {
-            SimpleSoundManager.PlaySound(SimpleSoundManager.forest001Q003);
+            SoundManager.PlaySound(SoundManager.forest001Q003);
             NPCText.text = "Can you help me?";
             answerText1.text = "yes";
             answerText2.text = "hello";
@@ -120,7 +120,7 @@ public class Forest001 : MonoBehaviour
 
         else if (questionNumber == 4)
         {
-            SimpleSoundManager.PlaySound(SimpleSoundManager.forest001Q004);
+            SoundManager.PlaySound(SoundManager.forest001Q004);
             NPCText.text = "Please tell me the names of the animals";
             answerText1.text = "okay";
             answerText2.text = "";

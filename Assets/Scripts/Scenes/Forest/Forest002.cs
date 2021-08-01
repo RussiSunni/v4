@@ -12,7 +12,7 @@ public class Forest002 : MonoBehaviour
                    fairyCorrect;
 
     public Sprite artemisSprite, artemisCorrect;
-    public Sprite artemisWriting, artemisIncorrect;
+    public Sprite artemisNeutral, artemisIncorrect;
     int questionNumber = 0;
     Text answerText1, answerText2, answerText3, answerText4;
     public float timeRemaining = 0;
@@ -32,7 +32,7 @@ public class Forest002 : MonoBehaviour
         //fairyIncorrect = Resources.Load<Sprite>("FairyIncorrect");
         //fairyNeutral = Resources.Load<Sprite>("FairyNeutral");
         //fairyCorrect = Resources.Load<Sprite>("FairyCorrect");
-        artemisWriting = Resources.Load<Sprite>("ArtemisNeutral");
+        artemisNeutral = Resources.Load<Sprite>("ArtemisNeutral");
         artemisIncorrect = Resources.Load<Sprite>("ArtemisIncorrect");
         artemisCorrect = Resources.Load<Sprite>("ArtemisCorrect");
 
@@ -41,29 +41,29 @@ public class Forest002 : MonoBehaviour
         // if (!GameControl.scene1Started)
         // {
         //  fairyTalk.text = "Hi, learner. Let’s help the animals find their names.";
-        //   SimpleSoundManager.playScene1Intro();
+        //   SoundManager.playScene1Intro();
         //  answerText1.text = "Start";
         //  }
         // else
         Answer1();
 
-        //print(WildAnimalNamesQuestionBank.questions[0].answerOptions[0]);
+        //print(AnimalsQuestionBank.questions[0].answerOptions[0]);
     }
 
     public void Answer1()
     {
         if (finished)
         {
-            SceneManager.LoadScene("Scene002");
+            SceneManager.LoadScene("Forest003");
         }
         else if (questionNumber == 0)
         {
             //questionImage.sprite = Resources.Load<Sprite>("Questions/Animals/Bear");
-            questionImage.sprite = WildAnimalNamesQuestionBank.questions[0].sprite;
-            answerText1.text = WildAnimalNamesQuestionBank.questions[0].answerOptions[0];
-            answerText2.text = WildAnimalNamesQuestionBank.questions[0].answerOptions[1];
-            answerText3.text = WildAnimalNamesQuestionBank.questions[0].answerOptions[2];
-            answerText4.text = WildAnimalNamesQuestionBank.questions[0].answerOptions[3];
+            questionImage.sprite = AnimalsQuestionBank.questions[0].sprite;
+            answerText1.text = AnimalsQuestionBank.questions[0].answerOptions[0];
+            answerText2.text = AnimalsQuestionBank.questions[0].answerOptions[1];
+            answerText3.text = AnimalsQuestionBank.questions[0].answerOptions[2];
+            answerText4.text = AnimalsQuestionBank.questions[0].answerOptions[3];
             //print(answerText4.text);
 
             fairyTalk.text = null;
@@ -72,16 +72,16 @@ public class Forest002 : MonoBehaviour
         }
         else
         {
-            if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText1.text)
+            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText1.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                // SimpleSoundManager.playIncorrectSound();
+                // SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -93,16 +93,16 @@ public class Forest002 : MonoBehaviour
         if (questionNumber != 0)
         {
 
-            if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText2.text)
+            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText2.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                //  SimpleSoundManager.playIncorrectSound();
+                //  SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -114,16 +114,16 @@ public class Forest002 : MonoBehaviour
         if (questionNumber != 0)
         {
 
-            if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText3.text)
+            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText3.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                //  SimpleSoundManager.playIncorrectSound();
+                //  SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -134,16 +134,16 @@ public class Forest002 : MonoBehaviour
     {
         if (questionNumber != 0)
         {
-            if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText4.text)
+            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText4.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SimpleSoundManager.playAnswerSound(WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
                 correctAnswer = false;
-                // SimpleSoundManager.playIncorrectSound();
+                // SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -154,30 +154,30 @@ public class Forest002 : MonoBehaviour
     {
         if (timerReady == true)
         {
-            // Debug.Log(questionNumber);
-            //  Debug.Log(WildAnimalNamesQuestionBank.questions.Count);
+            Debug.Log(questionNumber);
+            Debug.Log(AnimalsQuestionBank.questions.Count);
 
             if (correctAnswer == true)
             {
-                WildAnimalNamesQuestionBank.questions.RemoveAt(questionNumber - 1);
+                AnimalsQuestionBank.questions.RemoveAt(questionNumber - 1);
             }
 
-            else if (questionNumber < WildAnimalNamesQuestionBank.questions.Count)
+            else if (questionNumber < AnimalsQuestionBank.questions.Count)
             {
                 // questionNumber++;
-                WildAnimalNamesQuestionBank.questions.Add(WildAnimalNamesQuestionBank.questions[0]);
-                WildAnimalNamesQuestionBank.questions.RemoveAt(0);
+                AnimalsQuestionBank.questions.Add(AnimalsQuestionBank.questions[0]);
+                AnimalsQuestionBank.questions.RemoveAt(0);
             }
             else
                 questionNumber = 1;
 
-            if (WildAnimalNamesQuestionBank.questions.Count > 0)
+            if (AnimalsQuestionBank.questions.Count > 0)
             {
-                questionImage.sprite = WildAnimalNamesQuestionBank.questions[questionNumber - 1].sprite;
-                answerText1.text = WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[0];
-                answerText2.text = WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[1];
-                answerText3.text = WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[2];
-                answerText4.text = WildAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[3];
+                questionImage.sprite = AnimalsQuestionBank.questions[questionNumber - 1].sprite;
+                answerText1.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[0];
+                answerText2.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[1];
+                answerText3.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[2];
+                answerText4.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[3];
             }
             else
             {
@@ -203,97 +203,97 @@ public class Forest002 : MonoBehaviour
 
     public void MarkAsKnown()
     {
-        WildAnimalNamesQuestionBank.questions[questionNumber - 1].known = true;
+        AnimalsQuestionBank.questions[questionNumber - 1].known = true;
 
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 1)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 1)
         {
             GameControl.animalName001known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 2)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 2)
         {
             GameControl.animalName002known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 3)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 3)
         {
             GameControl.animalName003known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 4)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 4)
         {
             GameControl.animalName004known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 5)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 5)
         {
             GameControl.animalName005known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 6)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 6)
         {
             GameControl.animalName006known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 7)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 7)
         {
             GameControl.animalName007known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 8)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 8)
         {
             GameControl.animalName008known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 9)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 9)
         {
             GameControl.animalName009known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 10)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 10)
         {
             GameControl.animalName010known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 11)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 11)
         {
             GameControl.animalName011known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 12)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 12)
         {
             GameControl.animalName012known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 13)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 13)
         {
             GameControl.animalName013known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 14)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 14)
         {
             GameControl.animalName014known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 15)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 15)
         {
             GameControl.animalName015known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 16)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 16)
         {
             GameControl.animalName016known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 17)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 17)
         {
             GameControl.animalName017known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 18)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 18)
         {
             GameControl.animalName018known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 19)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 19)
         {
             GameControl.animalName019known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 20)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 20)
         {
             GameControl.animalName020known = true;
         }
-        if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 21)
+        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 21)
         {
             GameControl.animalName021known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 22)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 22)
         {
             GameControl.animalName022known = true;
         }
-        else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].number == 23)
+        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 23)
         {
             GameControl.animalName023known = true;
         }
@@ -311,13 +311,13 @@ public class Forest002 : MonoBehaviour
         }
         else
         {
-            fairyImage.sprite = artemisWriting;
+            fairyImage.sprite = artemisNeutral;
             ChangeQuestion();
             timerReady = false;
         }
-        // if (WildAnimalNamesQuestionBank.questions.Count > 0 && questionNumber != 0)
+        // if (AnimalsQuestionBank.questions.Count > 0 && questionNumber != 0)
         // {
-        //     if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].size == 2)
+        //     if (AnimalsQuestionBank.questions[questionNumber - 1].size == 2)
         //     {
         //         RectTransform questionRT = questionImage.GetComponent(typeof(RectTransform)) as RectTransform;
         //         questionRT.sizeDelta = new Vector2(800, 712);
@@ -327,7 +327,7 @@ public class Forest002 : MonoBehaviour
         //         fairyRT.sizeDelta = new Vector2(250.7f, 446.4f);
         //         fairyRT.anchoredPosition = new Vector2(274.7f, 223.2f);
         //     }
-        //     else if (WildAnimalNamesQuestionBank.questions[questionNumber - 1].size == 1)
+        //     else if (AnimalsQuestionBank.questions[questionNumber - 1].size == 1)
         //     {
         //         RectTransform questionRT = questionImage.GetComponent(typeof(RectTransform)) as RectTransform;
         //         questionRT.sizeDelta = new Vector2(400, 712);
