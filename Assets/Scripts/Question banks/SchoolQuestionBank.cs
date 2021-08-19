@@ -522,7 +522,7 @@ public class SchoolQuestionBank : Question
         LoadQuestionList();
     }
 
-    public static void LoadQuestionList()
+    public void LoadQuestionList()
     {
         // if (!GameControl.animalName004known)
         questions.Add(school001);

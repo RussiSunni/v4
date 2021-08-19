@@ -4,20 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Forest002 : MonoBehaviour
+public class School002 : MonoBehaviour
 {
-    public Image questionImage, fairyImage;
-    private Sprite fairyIncorrect,
-                   fairyNeutral,
-                   fairyCorrect;
-
-    public Sprite artemisSprite;
+    public Image questionImage, secretaryImage;
+    public Sprite secretarySprite, secretaryCorrect;
+    public Sprite secretaryNeutral, secretaryIncorrect;
     int questionNumber = 0;
     Text answerText1, answerText2, answerText3, answerText4;
     public float timeRemaining = 0;
     bool timerReady, correctAnswer, finished = false;
     int score;
-    public Text fairyTalk;
+    public Text secretaryTalk;
 
     void Start()
     {
@@ -25,12 +22,15 @@ public class Forest002 : MonoBehaviour
         answerText2 = GameObject.Find("Answer2Text").GetComponent<Text>();
         answerText3 = GameObject.Find("Answer3Text").GetComponent<Text>();
         answerText4 = GameObject.Find("Answer4Text").GetComponent<Text>();
-        fairyImage = GameObject.Find("Fairy").GetComponent<Image>();
-        fairyTalk = GameObject.Find("FairyTalk").GetComponent<Text>();
 
-        fairyIncorrect = Resources.Load<Sprite>("FairyIncorrect");
-        fairyNeutral = Resources.Load<Sprite>("FairyNeutral");
-        fairyCorrect = Resources.Load<Sprite>("FairyCorrect");
+        //  secretaryTalk = GameObject.Find("FairyTalk").GetComponent<Text>();
+
+        //fairyIncorrect = Resources.Load<Sprite>("FairyIncorrect");
+        //fairyNeutral = Resources.Load<Sprite>("FairyNeutral");
+        //fairyCorrect = Resources.Load<Sprite>("FairyCorrect");
+        //  secretaryNeutral = Resources.Load<Sprite>("ArtemisNeutral");
+        //  secretaryIncorrect = Resources.Load<Sprite>("ArtemisIncorrect");
+        //   secretaryCorrect = Resources.Load<Sprite>("ArtemisCorrect");
 
         timerReady = false;
 
@@ -43,36 +43,34 @@ public class Forest002 : MonoBehaviour
         // else
         Answer1();
 
-        //print(AnimalsQuestionBank.questions[0].answerOptions[0]);
+        //print(SchoolQuestionBank.questions[0].answerOptions[0]);
     }
 
     public void Answer1()
     {
         if (finished)
         {
-            SceneManager.LoadScene("Forest003");
+            SceneManager.LoadScene("School003");
         }
         else if (questionNumber == 0)
         {
-            //questionImage.sprite = Resources.Load<Sprite>("Questions/Animals/Bear");
-            questionImage.sprite = AnimalsQuestionBank.questions[0].sprite;
-            answerText1.text = AnimalsQuestionBank.questions[0].answerOptions[0];
-            answerText2.text = AnimalsQuestionBank.questions[0].answerOptions[1];
-            answerText3.text = AnimalsQuestionBank.questions[0].answerOptions[2];
-            answerText4.text = AnimalsQuestionBank.questions[0].answerOptions[3];
-            //print(answerText4.text);
+            questionImage.sprite = SchoolQuestionBank.questions[0].sprite;
+            answerText1.text = SchoolQuestionBank.questions[0].answerOptions[0];
+            answerText2.text = SchoolQuestionBank.questions[0].answerOptions[1];
+            answerText3.text = SchoolQuestionBank.questions[0].answerOptions[2];
+            answerText4.text = SchoolQuestionBank.questions[0].answerOptions[3];
 
-            fairyTalk.text = null;
+            secretaryTalk.text = null;
             questionNumber++;
             GameControl.scene1Started = true;
         }
         else
         {
-            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText1.text)
+            if (SchoolQuestionBank.questions[questionNumber - 1].questionName == answerText1.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                // SoundManager.playAnswerSound(SchoolQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
@@ -89,11 +87,11 @@ public class Forest002 : MonoBehaviour
         if (questionNumber != 0)
         {
 
-            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText2.text)
+            if (SchoolQuestionBank.questions[questionNumber - 1].questionName == answerText2.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                // SoundManager.playAnswerSound(SchoolQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
@@ -110,11 +108,11 @@ public class Forest002 : MonoBehaviour
         if (questionNumber != 0)
         {
 
-            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText3.text)
+            if (SchoolQuestionBank.questions[questionNumber - 1].questionName == answerText3.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                //  SoundManager.playAnswerSound(SchoolQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
@@ -130,11 +128,11 @@ public class Forest002 : MonoBehaviour
     {
         if (questionNumber != 0)
         {
-            if (AnimalsQuestionBank.questions[questionNumber - 1].questionName == answerText4.text)
+            if (SchoolQuestionBank.questions[questionNumber - 1].questionName == answerText4.text)
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                //  SoundManager.playAnswerSound(SchoolQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
@@ -151,34 +149,34 @@ public class Forest002 : MonoBehaviour
         if (timerReady == true)
         {
             Debug.Log(questionNumber);
-            Debug.Log(AnimalsQuestionBank.questions.Count);
+            Debug.Log(SchoolQuestionBank.questions.Count);
 
             if (correctAnswer == true)
             {
-                AnimalsQuestionBank.questions.RemoveAt(questionNumber - 1);
+                SchoolQuestionBank.questions.RemoveAt(questionNumber - 1);
             }
 
-            else if (questionNumber < AnimalsQuestionBank.questions.Count)
+            else if (questionNumber < SchoolQuestionBank.questions.Count)
             {
                 // questionNumber++;
-                AnimalsQuestionBank.questions.Add(AnimalsQuestionBank.questions[0]);
-                AnimalsQuestionBank.questions.RemoveAt(0);
+                SchoolQuestionBank.questions.Add(SchoolQuestionBank.questions[0]);
+                SchoolQuestionBank.questions.RemoveAt(0);
             }
             else
                 questionNumber = 1;
 
-            if (AnimalsQuestionBank.questions.Count > 0)
+            if (SchoolQuestionBank.questions.Count > 0)
             {
-                questionImage.sprite = AnimalsQuestionBank.questions[questionNumber - 1].sprite;
-                answerText1.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[0];
-                answerText2.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[1];
-                answerText3.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[2];
-                answerText4.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[3];
+                questionImage.sprite = SchoolQuestionBank.questions[questionNumber - 1].sprite;
+                answerText1.text = SchoolQuestionBank.questions[questionNumber - 1].answerOptions[0];
+                answerText2.text = SchoolQuestionBank.questions[questionNumber - 1].answerOptions[1];
+                answerText3.text = SchoolQuestionBank.questions[questionNumber - 1].answerOptions[2];
+                answerText4.text = SchoolQuestionBank.questions[questionNumber - 1].answerOptions[3];
             }
             else
             {
                 questionImage.sprite = null;
-                fairyTalk.text = "All finished.";
+                secretaryTalk.text = "All finished.";
                 answerText1.text = "Next";
                 answerText2.text = null;
                 answerText3.text = null;
@@ -193,103 +191,103 @@ public class Forest002 : MonoBehaviour
 
         if (score == 20)
         {
-            fairyTalk.text = "Wow, you really know this content";
+            secretaryTalk.text = "Wow, you really know this content";
         }
     }
 
     public void MarkAsKnown()
     {
-        AnimalsQuestionBank.questions[questionNumber - 1].known = true;
+        SchoolQuestionBank.questions[questionNumber - 1].known = true;
 
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 1)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 1)
         {
             GameControl.animalName001known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 2)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 2)
         {
             GameControl.animalName002known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 3)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 3)
         {
             GameControl.animalName003known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 4)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 4)
         {
             GameControl.animalName004known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 5)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 5)
         {
             GameControl.animalName005known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 6)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 6)
         {
             GameControl.animalName006known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 7)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 7)
         {
             GameControl.animalName007known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 8)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 8)
         {
             GameControl.animalName008known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 9)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 9)
         {
             GameControl.animalName009known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 10)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 10)
         {
             GameControl.animalName010known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 11)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 11)
         {
             GameControl.animalName011known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 12)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 12)
         {
             GameControl.animalName012known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 13)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 13)
         {
             GameControl.animalName013known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 14)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 14)
         {
             GameControl.animalName014known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 15)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 15)
         {
             GameControl.animalName015known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 16)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 16)
         {
             GameControl.animalName016known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 17)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 17)
         {
             GameControl.animalName017known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 18)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 18)
         {
             GameControl.animalName018known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 19)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 19)
         {
             GameControl.animalName019known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 20)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 20)
         {
             GameControl.animalName020known = true;
         }
-        if (AnimalsQuestionBank.questions[questionNumber - 1].number == 21)
+        if (SchoolQuestionBank.questions[questionNumber - 1].number == 21)
         {
             GameControl.animalName021known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 22)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 22)
         {
             GameControl.animalName022known = true;
         }
-        else if (AnimalsQuestionBank.questions[questionNumber - 1].number == 23)
+        else if (SchoolQuestionBank.questions[questionNumber - 1].number == 23)
         {
             GameControl.animalName023known = true;
         }
@@ -301,19 +299,19 @@ public class Forest002 : MonoBehaviour
         {
             timeRemaining -= Time.deltaTime;
             if (correctAnswer)
-                fairyImage.sprite = fairyCorrect;
+                secretaryImage.sprite = secretaryCorrect;
             else
-                fairyImage.sprite = fairyIncorrect;
+                secretaryImage.sprite = secretaryIncorrect;
         }
         else
         {
-            fairyImage.sprite = fairyNeutral;
+            secretaryImage.sprite = secretaryNeutral;
             ChangeQuestion();
             timerReady = false;
         }
-        // if (AnimalsQuestionBank.questions.Count > 0 && questionNumber != 0)
+        // if (SchoolQuestionBank.questions.Count > 0 && questionNumber != 0)
         // {
-        //     if (AnimalsQuestionBank.questions[questionNumber - 1].size == 2)
+        //     if (SchoolQuestionBank.questions[questionNumber - 1].size == 2)
         //     {
         //         RectTransform questionRT = questionImage.GetComponent(typeof(RectTransform)) as RectTransform;
         //         questionRT.sizeDelta = new Vector2(800, 712);
@@ -323,7 +321,7 @@ public class Forest002 : MonoBehaviour
         //         fairyRT.sizeDelta = new Vector2(250.7f, 446.4f);
         //         fairyRT.anchoredPosition = new Vector2(274.7f, 223.2f);
         //     }
-        //     else if (AnimalsQuestionBank.questions[questionNumber - 1].size == 1)
+        //     else if (SchoolQuestionBank.questions[questionNumber - 1].size == 1)
         //     {
         //         RectTransform questionRT = questionImage.GetComponent(typeof(RectTransform)) as RectTransform;
         //         questionRT.sizeDelta = new Vector2(400, 712);

@@ -7,8 +7,7 @@ public class Map : MonoBehaviour
 {
     public void LoadFarmStage()
     {
-        SceneManager.LoadScene("Farm001");
-        FarmAnimalNamesQuestionBank.LoadQuestionList();
+       SceneManager.LoadScene("Farm001");      
     }
 
     public void LoadHouseStage()

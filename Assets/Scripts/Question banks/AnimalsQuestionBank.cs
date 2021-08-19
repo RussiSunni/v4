@@ -32,6 +32,7 @@ public class AnimalsQuestionBank : Question
     public static Question animals024 = new Question();
     public static Question animals025 = new Question();
     public static Question animals026 = new Question();
+    public static Question animals027 = new Question();
 
 
     void Start()
@@ -39,6 +40,27 @@ public class AnimalsQuestionBank : Question
         animals001 = new Question()
         {
             number = 1,
+            questionName = "animal",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Animal"),
+            answerOptions = new List<string>()
+        {
+            "shark",
+            "panda",
+            "swan",
+            "dolphin"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Animal",
+            level = 1
+        };
+
+        animals002 = new Question()
+        {
+            number = 2,
             questionName = "bear",
             sprite = Resources.Load<Sprite>("Questions/Animals/Bear"),
             answerOptions = new List<string>()
@@ -53,27 +75,302 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Bear"
+            answerSound = "Bear",
+            level = 1
         };
 
-        animals002 = new Question()
+        animals003 = new Question()
         {
-            number = 2,
-            questionName = "wolf",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Wolf"),
+            number = 3,
+            questionName = "bee",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Bee"),
             answerOptions = new List<string>()
         {
-            "cat",
-            "wolf",
-            "mouse",
-            "ant"
+            "shark",
+            "panda",
+            "swan",
+            "dolphin"
         },
             tags = new List<string>()
         {
             "animals"
         },
             size = 1,
-            answerSound = "Wolf"
+            answerSound = "Bee",
+            level = 1
+        };
+
+        animals004 = new Question()
+        {
+            number = 4,
+            questionName = "bird",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Bird"),
+            answerOptions = new List<string>()
+        {
+            "shark",
+            "panda",
+            "swan",
+            "dolphin"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Bird",
+            level = 1
+        };
+
+        animals005 = new Question()
+        {
+            number = 5,
+            questionName = "cat",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Cat"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Cat",
+            level = 1
+        };
+
+        animals006 = new Question()
+        {
+            number = 6,
+            questionName = "chicken",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Chicken"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Chicken",
+            level = 1
+        };
+
+        animals007 = new Question()
+        {
+            number = 7,
+            questionName = "cow",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Cow"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Cow",
+            level = 1
+        };
+
+        animals008 = new Question()
+        {
+            number = 8,
+            questionName = "crocodile",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Crocodile"),
+            answerOptions = new List<string>()
+        {
+            "crocodile",
+            "parrot",
+            "lion",
+            "zebra"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Crocodile",
+            level = 1
+        };
+
+        animals009 = new Question()
+        {
+            number = 9,
+            questionName = "dog",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Dog"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Dog",
+            level = 1
+        };
+
+        animals010 = new Question()
+        {
+            number = 10,
+            questionName = "donkey",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Donkey"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Donkey",
+            level = 1
+        };
+
+        animals011 = new Question()
+        {
+            number = 11,
+            questionName = "duck",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Duck"),
+            answerOptions = new List<string>()
+        {
+            "bear",
+            "dog",
+            "cat",
+            "horse"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Duck",
+            level = 1
+        };
+
+        animals012 = new Question()
+        {
+            number = 12,
+            questionName = "elephant",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Elephant"),
+            answerOptions = new List<string>()
+        {
+            "tiger",
+            "elephant",
+            "goat",
+            "chicken"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Elephant",
+            level = 1
+        };
+
+        animals013 = new Question()
+        {
+            number = 13,
+            questionName = "fish",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Fish"),
+            answerOptions = new List<string>()
+        {
+            "tiger",
+            "elephant",
+            "goat",
+            "chicken"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Fish",
+            level = 1
+        };
+
+        animals014 = new Question()
+        {
+            number = 14,
+            questionName = "frog",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Frog"),
+            answerOptions = new List<string>()
+        {
+            "rabbit",
+            "parrot",
+            "pig",
+            "frog"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Frog",
+            level = 1
+        };
+
+        animals015 = new Question()
+        {
+            number = 15,
+            questionName = "giraffe",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Giraffe"),
+            answerOptions = new List<string>()
+        {
+            "giraffe",
+            "parrot",
+            "owl",
+            "zebra"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Giraffe",
+            level = 1
+        };
+
+        animals016 = new Question()
+        {
+            number = 16,
+            questionName = "goat",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Goat"),
+            answerOptions = new List<string>()
+        {
+            "giraffe",
+            "parrot",
+            "owl",
+            "zebra"
+        },
+            tags = new List<string>()
+        {
+            "animals"
+        },
+            size = 1,
+            answerSound = "Goat",
+            level = 1
         };
 
         animals003 = new Question()
@@ -93,28 +390,10 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Zebra"
+            answerSound = "Zebra",
+            level = 1
         };
 
-        animals004 = new Question()
-        {
-            number = 4,
-            questionName = "owl",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Owl"),
-            answerOptions = new List<string>()
-        {
-            "dog",
-            "horse",
-            "owl",
-            "zebra"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Owl"
-        };
 
         animals005 = new Question()
         {
@@ -133,7 +412,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Monkey"
+            answerSound = "Monkey",
+            level = 1
         };
 
         animals006 = new Question()
@@ -153,28 +433,11 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Parrot"
+            answerSound = "Parrot",
+            level = 2
         };
 
-        animals007 = new Question()
-        {
-            number = 7,
-            questionName = "giraffe",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Giraffe"),
-            answerOptions = new List<string>()
-        {
-            "giraffe",
-            "parrot",
-            "owl",
-            "zebra"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Giraffe"
-        };
+
 
         animals008 = new Question()
         {
@@ -193,28 +456,10 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Lion"
+            answerSound = "Lion",
+            level = 2
         };
 
-        animals009 = new Question()
-        {
-            number = 9,
-            questionName = "crocodile",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Crocodile"),
-            answerOptions = new List<string>()
-        {
-            "crocodile",
-            "parrot",
-            "lion",
-            "zebra"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Crocodile"
-        };
 
 
 
@@ -235,28 +480,11 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Rabbit"
+            answerSound = "Rabbit",
+            level = 2
         };
 
-        animals011 = new Question()
-        {
-            number = 11,
-            questionName = "frog",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Frog"),
-            answerOptions = new List<string>()
-        {
-            "rabbit",
-            "parrot",
-            "pig",
-            "frog"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Frog"
-        };
+
 
         animals012 = new Question()
         {
@@ -275,29 +503,12 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Tiger"
+            answerSound = "Tiger",
+            level = 1
         };
 
 
-        animals013 = new Question()
-        {
-            number = 13,
-            questionName = "elephant",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Elephant"),
-            answerOptions = new List<string>()
-        {
-            "tiger",
-            "elephant",
-            "goat",
-            "chicken"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Elephant"
-        };
+
 
         animals014 = new Question()
         {
@@ -316,7 +527,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Lizard"
+            answerSound = "Lizard",
+            level = 1
         };
 
         animals015 = new Question()
@@ -336,7 +548,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Bat"
+            answerSound = "Bat",
+            level = 2
         };
 
         animals016 = new Question()
@@ -356,7 +569,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Eagle"
+            answerSound = "Eagle",
+            level = 3
         };
 
         animals017 = new Question()
@@ -376,7 +590,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Kangaroo"
+            answerSound = "Kangaroo",
+            level = 2
         };
 
         animals018 = new Question()
@@ -396,7 +611,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Panda"
+            answerSound = "Panda",
+            level = 2
         };
 
         animals019 = new Question()
@@ -416,7 +632,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Penguin"
+            answerSound = "Penguin",
+            level = 2
         };
 
 
@@ -438,7 +655,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Snake"
+            answerSound = "Snake",
+            level = 1
         };
 
         animals021 = new Question()
@@ -458,7 +676,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Swan"
+            answerSound = "Swan",
+            level = 3
         };
 
         animals022 = new Question()
@@ -478,7 +697,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Tortoise"
+            answerSound = "Tortoise",
+            level = 3
         };
 
         animals023 = new Question()
@@ -498,7 +718,8 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Shark"
+            answerSound = "Shark",
+            level = 2
         };
 
         animals024 = new Question()
@@ -518,14 +739,19 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Dolphin"
+            answerSound = "Dolphin",
+            level = 2
         };
 
-        animals025 = new Question()
+
+
+
+
+        animals027 = new Question()
         {
-            number = 25,
-            questionName = "bee",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Bee"),
+            number = 27,
+            questionName = "animal",
+            sprite = Resources.Load<Sprite>("Questions/Animals/Animal"),
             answerOptions = new List<string>()
         {
             "shark",
@@ -538,28 +764,13 @@ public class AnimalsQuestionBank : Question
             "animals"
         },
             size = 1,
-            answerSound = "Bee"
+            answerSound = "Animal",
+            level = 1
         };
 
-        animals026 = new Question()
-        {
-            number = 26,
-            questionName = "bird",
-            sprite = Resources.Load<Sprite>("Questions/Animals/Bird"),
-            answerOptions = new List<string>()
-        {
-            "shark",
-            "panda",
-            "swan",
-            "dolphin"
-        },
-            tags = new List<string>()
-        {
-            "animals"
-        },
-            size = 1,
-            answerSound = "Bird"
-        };
+
+
+
 
         LoadQuestionList();
     }

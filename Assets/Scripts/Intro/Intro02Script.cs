@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Intro02Script : MonoBehaviour
 {
-    private float timeRemaining = 5;
+    private float timeRemaining = 2;
     void Update()
     {
         if (timeRemaining > 0)

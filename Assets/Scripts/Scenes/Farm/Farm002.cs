@@ -36,161 +36,27 @@ public class Farm002 : MonoBehaviour
 
     public void Answer1()
     {
-        if (finished)
-        {
-            //  SceneManager.LoadScene("Scene002");
-        }
-        else if (questionNumber == 0)
-        {
-            questionImage.sprite = FarmAnimalNamesQuestionBank.questions[0].sprite;
-            answerText1.text = FarmAnimalNamesQuestionBank.questions[0].answerOptions[0];
-            answerText2.text = FarmAnimalNamesQuestionBank.questions[0].answerOptions[1];
-            answerText3.text = FarmAnimalNamesQuestionBank.questions[0].answerOptions[2];
-            answerText4.text = FarmAnimalNamesQuestionBank.questions[0].answerOptions[3];
-            print(answerText4.text);
-
-            fairyTalk.text = null;
-            questionNumber++;
-            GameControl.scene1Started = true;
-        }
-        else
-        {
-            if (FarmAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText1.text)
-            {
-                correctAnswer = true;
-                MarkAsKnown();
-                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
-            }
-            else
-            {
-                correctAnswer = false;
-                SoundManager.playIncorrectSound();
-            }
-
-            timeRemaining = 1;
-            timerReady = true;
-        }
+      
     }
+
     public void Answer2()
     {
-        if (questionNumber != 0)
-        {
+      
 
-            if (FarmAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText2.text)
-            {
-                correctAnswer = true;
-                MarkAsKnown();
-                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
-            }
-            else
-            {
-                correctAnswer = false;
-                SoundManager.playIncorrectSound();
-            }
-
-            timeRemaining = 1;
-            timerReady = true;
-        }
     }
+   
     public void Answer3()
     {
-        if (questionNumber != 0)
-        {
-
-            if (FarmAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText3.text)
-            {
-                correctAnswer = true;
-                MarkAsKnown();
-                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
-            }
-            else
-            {
-                correctAnswer = false;
-                SoundManager.playIncorrectSound();
-            }
-
-            timeRemaining = 1;
-            timerReady = true;
-        }
+     
     }
+
     public void Answer4()
     {
-        if (questionNumber != 0)
-        {
-            if (FarmAnimalNamesQuestionBank.questions[questionNumber - 1].questionName == answerText4.text)
-            {
-                correctAnswer = true;
-                MarkAsKnown();
-                SoundManager.playAnswerSound(FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerSound);
-            }
-            else
-            {
-                correctAnswer = false;
-                SoundManager.playIncorrectSound();
-            }
-
-            timeRemaining = 1;
-            timerReady = true;
-        }
+       
     }
-    void ChangeQuestion()
-    {
-        if (timerReady == true)
-        {
-            // Debug.Log(questionNumber);
-            //  Debug.Log(AnimalNamesQuestionBank.questions.Count);
+   
 
-            if (correctAnswer == true)
-            {
-                FarmAnimalNamesQuestionBank.questions.RemoveAt(questionNumber - 1);
-            }
-
-            else if (questionNumber < FarmAnimalNamesQuestionBank.questions.Count)
-            {
-                // questionNumber++;
-                FarmAnimalNamesQuestionBank.questions.Add(FarmAnimalNamesQuestionBank.questions[0]);
-                FarmAnimalNamesQuestionBank.questions.RemoveAt(0);
-            }
-            else
-                questionNumber = 1;
-
-            if (FarmAnimalNamesQuestionBank.questions.Count > 0)
-            {
-                questionImage.sprite = FarmAnimalNamesQuestionBank.questions[questionNumber - 1].sprite;
-                answerText1.text = FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[0];
-                answerText2.text = FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[1];
-                answerText3.text = FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[2];
-                answerText4.text = FarmAnimalNamesQuestionBank.questions[questionNumber - 1].answerOptions[3];
-            }
-            else
-            {
-                questionImage.sprite = null;
-                fairyTalk.text = "All finished.";
-                answerText1.text = "Next";
-                answerText2.text = null;
-                answerText3.text = null;
-                answerText4.text = null;
-
-                finished = true;
-            }
-        }
-
-        // add Fairy feedback based on how well they do with animals
-        score = 0;
-
-        if (score == 20)
-        {
-            fairyTalk.text = "Wow, you really know this content";
-        }
-    }
-
-
-    public void MarkAsKnown()
-    {
-
-
-
-    }
+  
 
     void Update()
     {
@@ -205,9 +71,10 @@ public class Farm002 : MonoBehaviour
         else
         {
             fairyImage.sprite = fairyNeutral;
-            ChangeQuestion();
+         //   ChangeQuestion();
             timerReady = false;
         }
+      
         // if (AnimalNamesQuestionBank.questions.Count > 0 && questionNumber != 0)
         // {
         //     if (AnimalNamesQuestionBank.questions[questionNumber - 1].size == 2)

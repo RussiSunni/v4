@@ -17,4 +17,5 @@ public class Question : MonoBehaviour
     public bool answered;
     public bool known;
     public string answerSound;
+    public int level;
 }
