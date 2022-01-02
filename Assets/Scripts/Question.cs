@@ -18,4 +18,6 @@ public class Question : MonoBehaviour
     public bool known;
     public string answerSound;
     public int level;
+
+    public List<char> answerBlocks;
 }

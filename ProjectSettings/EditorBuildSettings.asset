@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Start Menu.unity
     guid: 67562aff118c5a9bdb46770d911c8b37
   - enabled: 0
@@ -17,19 +17,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Intro/Intro1.unity
     guid: fb08c972d8468e59fb181c5025c45a85
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Intro/Intro2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WorldMap.unity
     guid: ef7a2b19cde36b2a3a2d4529bf442d26
   - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: e63074b96b02bd399b999a50d819211a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest/ForestIntro.unity
     guid: 8e9fe331f794f2b45a6cf32d12d12f1a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Forest/Forest001.unity
     guid: d79dcd09f0ab910038fefe9f26217d56
   - enabled: 1
@@ -50,13 +50,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Farm/Farm002.unity
     guid: 0a5136a6f3911becf928766095deba12
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Town/TownIntro.unity
     guid: e118a7a1ec2d0a24a9efb13072c00522
   - enabled: 0
     path: Assets/Scenes/Town/Town001.unity
     guid: 7e09b7b09805f9f7db2f17e7305ddd1d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/School/SchoolIntro.unity
     guid: 7d34906f9b26d3148b16e74916bc538c
   - enabled: 0
