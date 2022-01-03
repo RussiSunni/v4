@@ -7,7 +7,7 @@ public class Map : MonoBehaviour
 {
     public void LoadFarmStage()
     {
-       SceneManager.LoadScene("Farm001");      
+        SceneManager.LoadScene("Farm001");
     }
 
     public void LoadHouseStage()
@@ -22,7 +22,7 @@ public class Map : MonoBehaviour
 
     public void LoadForestStage()
     {
-        SceneManager.LoadScene("ForestIntro");
+        SceneManager.LoadScene("Forest001");
     }
     public void LoadTownStage()
     {
