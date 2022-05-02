@@ -11,19 +11,13 @@ public class SoundManager : MonoBehaviour
 
     void Start()
     {
-        incorrectSound = Resources.Load<AudioClip>("Sounds/incorrectSound2");
-        correctSound = Resources.Load<AudioClip>("");
+        incorrectSound = Resources.Load<AudioClip>("Sounds/Incorrect");
+        correctSound = Resources.Load<AudioClip>("Sounds/Correct");
         nextLevelSound = Resources.Load<AudioClip>("Sounds/nextLevel");
         forest001Q001 = Resources.Load<AudioClip>("Sounds/Forest/01/hello");
         forest001Q002 = Resources.Load<AudioClip>("Sounds/Forest/01/welcome_to_my_forest");
         forest001Q003 = Resources.Load<AudioClip>("Sounds/Forest/01/can_you_help_me");
         forest001Q004 = Resources.Load<AudioClip>("Sounds/Forest/01/please_tell_me_the_names_of_the_animals");
-
-        // answers
-        // animals
-        //  catSound = Resources.Load<AudioClip>("Cat");
-
-
 
         audioSrc = GetComponent<AudioSource>();
     }

@@ -315,7 +315,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 01cd679a1b9ee48bf9c546f6ce2cb97e, type: 3}
+    m_Font: {fileID: 12800000, guid: f92735edbff560e428a6aebbfdb44d7f, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a17fa2951287ff8caa5461293d79186a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3aa2fbf5037022c41ac6cf13b5771870, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1257,7 +1257,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 01cd679a1b9ee48bf9c546f6ce2cb97e, type: 3}
+    m_Font: {fileID: 12800000, guid: f92735edbff560e428a6aebbfdb44d7f, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 01cd679a1b9ee48bf9c546f6ce2cb97e, type: 3}
+    m_Font: {fileID: 12800000, guid: f92735edbff560e428a6aebbfdb44d7f, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -1575,9 +1575,6 @@ MonoBehaviour:
   questionImage: {fileID: 1194859874}
   fairyImage: {fileID: 709093647}
   artemisSprite: {fileID: 0}
-  artemisCorrect: {fileID: 0}
-  artemisNeutral: {fileID: 0}
-  artemisIncorrect: {fileID: 0}
   timeRemaining: 0
   fairyTalk: {fileID: 142022497}
 --- !u!4 &1661714691
@@ -1620,6 +1617,7 @@ MonoBehaviour:
   known: 0
   answerSound: 
   level: 0
+  answerBlocks: 
 --- !u!1 &1725603067
 GameObject:
   m_ObjectHideFlags: 0
@@ -1678,7 +1676,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 01cd679a1b9ee48bf9c546f6ce2cb97e, type: 3}
+    m_Font: {fileID: 12800000, guid: f92735edbff560e428a6aebbfdb44d7f, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0

@@ -72,12 +72,12 @@ public class Forest002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playCorrectSound();
             }
             else
             {
                 correctAnswer = false;
-                // SoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -93,12 +93,12 @@ public class Forest002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playCorrectSound();
             }
             else
             {
                 correctAnswer = false;
-                //  SoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -114,12 +114,12 @@ public class Forest002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playCorrectSound();
             }
             else
             {
                 correctAnswer = false;
-                //  SoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -134,12 +134,12 @@ public class Forest002 : MonoBehaviour
             {
                 correctAnswer = true;
                 MarkAsKnown();
-                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
+                SoundManager.playCorrectSound();
             }
             else
             {
                 correctAnswer = false;
-                // SoundManager.playIncorrectSound();
+                SoundManager.playIncorrectSound();
             }
 
             timeRemaining = 1;
@@ -150,9 +150,6 @@ public class Forest002 : MonoBehaviour
     {
         if (timerReady == true)
         {
-            Debug.Log(questionNumber);
-            Debug.Log(AnimalsQuestionBank.questions.Count);
-
             if (correctAnswer == true)
             {
                 AnimalsQuestionBank.questions.RemoveAt(questionNumber - 1);
@@ -174,6 +171,7 @@ public class Forest002 : MonoBehaviour
                 answerText2.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[1];
                 answerText3.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[2];
                 answerText4.text = AnimalsQuestionBank.questions[questionNumber - 1].answerOptions[3];
+                SoundManager.playAnswerSound(AnimalsQuestionBank.questions[questionNumber - 1].answerSound);
             }
             else
             {
