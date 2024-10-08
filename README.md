@@ -1,5 +1,4 @@
-# V4.1  
-A variant of V4.
+# Simple Vocab Game 2
 This version is in landscape mode, with wooden-style buttons.<br/>
 [Playable version](http://version-four-landscape.s3-website-us-east-1.amazonaws.com/)
  
